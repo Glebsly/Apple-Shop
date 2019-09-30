@@ -1,8 +1,34 @@
 body{
   background-color: #f8f8f8;
+  margin: 0;
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header{
+  width: 100%;
+  background-color: #eaeaea;
+  height: 120px;
+  border-bottom: 1px solid #000000;
+}
+.header .container{
+  width: 100%;
+  height: 50px;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  padding: 35px 50px;
+  justify-content: space-between;
+}
+.menu{
+  display: flex;
+  padding-left: 7.5%;
 }
 .menu li{
   list-style-type: none;
+  margin-right: 15%;
 }
 .menu li a{
   font-size: 20px;
@@ -10,21 +36,90 @@ body{
   text-decoration: none;
   color: #292929;
 }
+.menu li a:hover{
+  color: #1e90ff;
+}
 .logo{
   color: #1e90ff;
   font-family: 'Permanent Marker', cursive;
   font-size: 56px;
   margin: 10px ;
 }
+.merchandise{
+  display: flex;
+}
+.photobox{
+  margin-right: 7%;
+}
+/* .photobox{
+  display: inline-block;
+}
+.photobox a{
+  height: 100%;
+} */
 .photo{
   outline: 3px solid #1e90ff;
+  height: 350px;
+  width: 500px;
+}
+.photo:hover{
+  outline: none;
+}
+/* .buy{
+  display: inline-block;
+  height: 50px;
+} */
+.buy{
+  width: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.buy .old-price{
+  display: block;
+  color: grey;
+  text-decoration: line-through;
+  font-size: 30px;
+}
+.buy .new-price{
+  display: block;
+  color: #000000;
+  font-size: 36px;
+  margin: 25px auto 25px;
+}
+.buy button{
+  color: #ffffff;
+  background-color: #1e90ff;
+  height: 70px;
+  width: 200px;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.buy button:hover{
+  background-color: #ffffff;
+  color: #1e90ff;
+  border: 3px solid #1e90ff;
+}
+.buy button:active{
+  color: #ffffff;
+  background-color: #1e90ff;
 }
 .description{
+  width: 100%;
   font-size: 18px;
   color: black;
   font-weight: 400;
   background-color: #eaeaea;
 }
+/* .desc::first-letter{
+  font-family: 'Arial';
+  font-style: oblique;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #1e90ff;
+} */
 .short{
   color: #707070;
   font-size: 14px;
@@ -37,6 +132,15 @@ body{
   font-size: 18px;
   list-style-type: square;
 }
+table{
+  border-collapse: collapse;
+}
+.tech-table td{
+  border: 1px solid black;
+  width: 150px;
+  text-align: center;
+}
+
 .long{
   color: #484343;
   font-size: 16px;
@@ -51,11 +155,12 @@ input[type=text]{
   color: #2f2f2f;
   font-style: italic;
   font-size: 16px;
+  text-transform: capitalize;
 }
 input[type=email]{
   width: 200px;
   height: 22px;
-  color: #2f2f2f;
+  color: #1e90ff;
   font-style: italic;
   font-size: 16px;
 }
@@ -64,4 +169,48 @@ textarea{
   color: #2f2f2f;
   font-style: italic;
   font-size: 16px;
+}
+.big-table{
+  width: 80%;
+  margin-bottom: 20px;
+}
+.big-table tr:first-child{
+  height: 50px;
+}
+.big-table td{
+  height: 20px;
+  border: 1px solid black;
+
+}
+.goods{
+  display: flex;
+}
+.item{
+  padding: 5px;
+  border-radius: 2%;
+  margin-right: 32px;
+  background-color: #c6c6c6;
+  text-align: center;
+}
+.item img{
+  width: 250px;
+}
+.item a{
+  color: black;
+  text-decoration: none;
+}
+.footer{
+  width: 100%;
+  height: 75px;
+  margin-top: 32px;
+  border-top: 1px solid #000000;
+  background-color: #1e90ff;
+  align-items: center;
+}
+.footer .container{
+  width: 100%;
+  height: 65px;
+  max-width: 1100px;
+  padding: 10px 50px 0 50px;
+  text-align: right;
 }
